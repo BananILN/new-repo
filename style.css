@@ -5,7 +5,7 @@ color: #5277FF;
 overflow-x: hidden;
 overflow-y: scroll;
 margin: 0px;
-height: 2000px;
+height: 4000px;
 }
 .title-desc{
 width: 400px;
@@ -93,12 +93,12 @@ border-radius: 30px;
 
 
 .button-7 {
-  background-color: #0095ff;
+  background-color: #0075fa;
   border: 1px solid transparent;
   border-radius: 12px;
   box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
   box-sizing: border-box;
-  color: #1f1f1f;
+  color: #101214;
   cursor: pointer;
   display: inline-block;
   font-family: 'Inter', sans-serif;
@@ -120,7 +120,7 @@ border-radius: 30px;
 
 .button-7:hover,
 .button-7:focus {
-  background-color: #07c;
+  background-color: rgb(218, 227, 233);
 }
 
 .button-7:focus {
@@ -128,7 +128,7 @@ border-radius: 30px;
 }
 
 .button-7:active {
-  background-color: #0064bd;
+  background-color: #dadadb;
   box-shadow: none;
 }
 hr{
@@ -137,27 +137,155 @@ background-color: white;
 color: red;
 height: 2px;
 }
-.fast-view{
+.sect{
 position: absolute;
 top: 900px;
 background-color: rgb(159 159 159 / 22%);
-height: 1000px;
+height: 1100px;
 width: 100%;
+
+}
+.fast-view{
+  position: relative;
+width: 100%;
+margin-top: 100px;
+padding: 0;
+}
+.mini-tittle{
+
+
+width: 100%;
+height: 150px;
 
 }
 .new-h{
   display: flex;
   justify-content: center;
   align-items: center;
+  
   font-size: 42px;
   font-weight: 900;
-  margin: 100px 0px;
+  margin: 0;
+  padding-bottom: 60px;
 }
 .new-p{
   display: flex;
   justify-content:center;
   align-items: center;
   font-size: 20px;
-  margin: 100px 0px;
+  font-weight: 600;
+  margin: 0;
   
+
+}
+
+.main-card{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -300px;
+  padding: 0;
+  
+
+  
+}
+.card{
+  top: 400px;
+  width: 100%;
+  height: 450px;
+  margin: 0px 250px;
+  position: relative;
+  border: 1px solid #1F1F1F;
+  right: 0px;
+  left: -77px;
+  padding: 0px;
+  
+}
+.product, .description{
+  width: 300px;
+  height: 450px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  background-color: #FFF;
+  backface-visibility: hidden;
+  transition: 1s;
+  padding: 0;
+  }
+  .description a{
+    display: inline-block;
+    padding: 10px 30px;
+    margin-right: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: antiquewhite;
+    
+    }
+    .card:hover.product{
+      transform: rotateY(180deg);
+  }
+  .card:hover .description{
+      transform: rotateY(360deg);
+  }
+
+  .description{
+    box-sizing: border-box;
+    padding: 40px;
+    transform: rotateY(180deg);
+    
+    }
+
+.cards-img{
+width: 300px;
+height: 450px;
+}
+
+.button-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -838px;
+  top: 430px;
+  background-color: #0075fa;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #101214;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-6:hover,
+.button-6:focus {
+  background-color: rgb(218, 227, 233);
+}
+
+.button-6:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-6:active {
+  background-color: #dadadb;
+  box-shadow: none;
 }
